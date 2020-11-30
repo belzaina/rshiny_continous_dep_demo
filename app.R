@@ -13,9 +13,12 @@ date_time <- date()
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-
+    
     h1("DEMO APP"),
-    img(src = "https://travis-ci.com/belzaina/rshiny_continous_dep_demo.svg?branch=master"),
+    a(
+        img(src = "https://travis-ci.com/belzaina/rshiny_continous_dep_demo.svg?branch=master"),
+        href = "https://travis-ci.com/belzaina/rshiny_continous_dep_demo"
+    ),
     br(),br(),
     h3("Last build:"),
     p(date_time)
@@ -24,7 +27,7 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-
+    
 }
 
 # Run the application 
