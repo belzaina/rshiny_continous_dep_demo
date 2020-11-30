@@ -15,7 +15,7 @@ date_time <- date()
 ui <- fluidPage(
 
     h1("DEMO APP"),
-    img(src = "https://travis-ci.com/belzaina/postefrance.svg?branch=master"),
+    img(src = "https://travis-ci.com/belzaina/rshiny_continous_dep_demo.svg?branch=master"),
     br(),br(),
     h3("Last build:"),
     p(date_time)
